@@ -1,5 +1,3 @@
----
-
 ## Providers
 
 - **Provider**: Declared globally in Riverpod as they are immutable.
@@ -21,6 +19,4 @@
 10. `select` is used when you want the widget to rebuild only when there is a change in a particular selected value.
 11. `FutureProvider` is used with futures, such as asynchronous values and HTTP calls.
 12. Riverpod provides easy access to provider state.
-  
----
 
