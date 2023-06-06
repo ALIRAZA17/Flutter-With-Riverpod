@@ -1,7 +1,7 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'dart:convert';
 
-import 'package:flutter_riverpod/flutter_riverpod.dart';
+// import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class User {
   final String name;
@@ -31,8 +31,8 @@ class User {
 
   factory User.fromMap(Map<String, dynamic> map) {
     return User(
-      name: map['name'] as String,
-      age: map['age'] as int,
+      name: map['name'] ?? '',
+      age: map['age']?.toInt() ?? 0,
     );
   }
 
@@ -55,9 +55,9 @@ class User {
   int get hashCode => name.hashCode ^ age.hashCode;
 }
 
-class UserNotifier extends StateNotifier<User> {
-  UserNotifier() : super(const User(name: "Ali Raza", age: 20));
-  void updateName(String n) {
-    state = state.copyWith(name: n);
-  }
-}
+// class UserNotifier extends StateNotifier<User> {
+//   UserNotifier() : super(const User(name: "Ali Raza", age: 20));
+//   void updateName(String n) {
+//     state = state.copyWith(name: n);
+//   }
+// }

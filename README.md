@@ -26,4 +26,8 @@ there is no leakage of state
 
 11- In statenotifier class we can change the value of state and not outside it because outside it the state is immutable
 
-12- 
+12- Select is used when we want the widget to rebuild only when there is a change in only one particular selected value
+
+13- Future provider works with future such as asynchronous values, http calls
+
+14- 
