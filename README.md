@@ -26,7 +26,7 @@ Overall, Riverpod simplifies state management in Flutter, promotes good architec
 - **StateNotifier and StateNotifierProvider**: Used to update values of complex data types other than simple strings and integers, such as objects.
 - **FutureProvider**: Deals with API's to get the data from online sources
 
-### Key Concepts
+### Key Concepts(Important Points)
 
 1. Providers are declared globally in Riverpod because they are immutable.
 2. The first type of provider is the `provider` which is a read-only widget that provides data to other widgets.
