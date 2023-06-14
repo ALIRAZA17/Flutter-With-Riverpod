@@ -26,6 +26,34 @@ Overall, Riverpod simplifies state management in Flutter, promotes good architec
 - **StateNotifier and StateNotifierProvider**: Used to update values of complex data types other than simple strings and integers, such as objects.
 - **FutureProvider**: Deals with API's to get the data from online sources
 
+## Riverpod Providers
+
+Riverpod is a state management library for Flutter that helps you manage state and data in a clean and efficient manner. It provides various types of providers to handle different scenarios in your application. Here are the key concepts related to different Riverpod providers:
+
+### Provider
+The `Provider` is the most basic provider in Riverpod. It is used to expose a value or an object to other parts of your application. It can be used with any type of data or objects.
+
+### ChangeNotifierProvider
+`ChangeNotifierProvider` is a type of provider that is specifically designed to work with Flutter's `ChangeNotifier` class. It allows you to easily expose and listen to changes in a `ChangeNotifier` object.
+
+### FutureProvider
+`FutureProvider` is used to handle asynchronous data. It allows you to define a future value and automatically handle loading, error, and success states. It is typically used when fetching data from an API or performing other asynchronous operations.
+
+### StreamProvider
+`StreamProvider` is similar to `FutureProvider`, but it works with `Stream` objects. It allows you to expose a stream of data and automatically update the UI whenever new data is emitted by the stream.
+
+### ProviderContainer
+`ProviderContainer` is a special provider that allows you to create and manage providers dynamically at runtime. It is useful when you need to create providers on-demand or update the value of a provider from a specific scope.
+
+### Family
+`Family` is a concept in Riverpod that allows you to create providers with dynamic parameters. It enables you to define a provider that takes dynamic arguments and creates a new provider instance for each unique combination of arguments.
+
+### ScopedProvider
+`ScopedProvider` is used to limit the scope of a provider to a specific part of your application. It allows you to create providers that are only accessible within a specific widget subtree.
+
+
+
+
 ### Key Concepts(Important Points)
 
 1. Providers are declared globally in Riverpod because they are immutable.
@@ -40,4 +68,6 @@ Overall, Riverpod simplifies state management in Flutter, promotes good architec
 10. `select` is used when you want the widget to rebuild only when there is a change in a particular selected value.
 11. `FutureProvider` is used with futures, such as asynchronous values and HTTP calls.
 12. Riverpod provides easy access to provider state.
+
+
 
