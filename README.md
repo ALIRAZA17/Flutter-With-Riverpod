@@ -51,8 +51,11 @@ The `Provider` is the most basic provider in Riverpod. It is used to expose a va
 ### ScopedProvider
 `ScopedProvider` is used to limit the scope of a provider to a specific part of your application. It allows you to create providers that are only accessible within a specific widget subtree.
 
+### AutoDisposeProvider
+`AutoDisposeProvider` is a provider that automatically disposes its value when it is no longer used by any part of your application. It is useful when you have providers that are no longer needed and you want to release resources associated with them.
 
-
+### ProviderOverride
+`ProviderOverride` is a provider that allows you to override the value of an existing provider within a specific scope. It is useful when you need to replace a provider with a different value or object for testing or mocking purposes.
 
 ### Key Concepts(Important Points)
 
